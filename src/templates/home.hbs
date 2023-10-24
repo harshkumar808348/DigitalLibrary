@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<style>
+    .btn-outline-success{
+        padding: 30px;
+        margin-top: 250px;
+        
+        margin-left: 50px;
+        font-size: 50px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+  }
+
+  .line {
+      background-color: rgba(85, 139, 197, 0.8);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .container-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+  }
+
+  .container {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+  }
+
+  .container:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .container h2 {
+      margin-bottom: 20px;
+  }
+
+  .about {
+      font-size: 18px;
+  }
+
+  @keyframes fadeInUp {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  .animated {
+      animation: fadeInUp 1s ease;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #932222;
+  }
+<!--   
+ header h1 {
+    font-size: 35px;
+  }
+   -->
+  header nav {
+    display: flex;
+    align-items: center;
+    background-color: #1c1b23;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    background: url('endbackground.jpg') center/cover no-repeat; /* Set the background image */
+    background: scroll;
+    height: 300px; /* Set the height of the header */
+    color: white; /* Text color on top of the image */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    background-color: rgba(229, 229, 240, 0.5); /* Semi-transparent background for better readability */
+    padding: 20px;
+}
+
+.page-footer {
+    background-color: #201844;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav li {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 10px;
+  
+  }
+  
+  header nav a {
+    color: #295fbe;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  header nav a:hover {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .video-container {
+    position: relative;
+       width: 100%;
+       height: 100vh; 
+       overflow: hidden;
+   }
+   .video-container video {
+       width: 100%;
+       height: 100%;
+       object-fit: cover; 
+       
+   }
+   body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    background: url('addbackground.jpg') center/cover no-repeat; /* Set the background image */
+    background: scroll;
+    height: 300px; /* Set the height of the header */
+    color: white; /* Text color on top of the image */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    background-color: rgba(164, 160, 156, 0.537); /* Semi-transparent background for better readability */
+    /* padding: 20px; */
+}
+
+.page-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.social-icons {
+    font-size: 50px;
+    /* background-color: rgb(211, 212, 217); */
+}
+.social-icons i {
+    margin: 10px 20px;
+
+}
+.heading1{
+  color: aliceblue;
+  margin-top: 150px;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: -75px;
+  
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <img src="BookFlip.png" class="BookFlip">
+            <ul> 
+                <li> <a href="./thirdpage/about">About</a></li>
+                <li> <a href="./thirdpage/contact">Contact</a></li>
+                <li> <a href="./thirdpage/thankyou">Sign Out</a></li>
+            </ul>
+        </div> 
+        <div class="heading1">Welcome to Digital Library</div>
+         <a href="./engineering/index.hbs">
+         <button type="button" class="btn btn-outline-success">ENGINEERING</button></a>
+         <a href="./novels/index.hbs">
+            <button type="button" class="btn btn-outline-success">NOVELS</button>
+          </a>
+            <a href="./ncert/booklist">
+            <button type="button" class="btn btn-outline-success">NCERT</button></a>
+            <a href="./secondpage/index">
+            <button type="button" class="btn btn-outline-success">OTHERS</button></a> 
+         </div>
+         <img src="book.png" class="book">
+         <img src="flip.png" class="flip">
+
+         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="line">
+            <h1>"Explore the boundless realm of knowledge with our Digital Library – where curiosity meets convenience. Dive
+                into a treasure trove of wisdom, where every click opens a door to a world of endless possibilities. Unleash
+                your intellect, broaden your horizons, and embark on a journey through the ages, all from the comfort of your
+                screen. Your gateway to enlightenment is just a click away. Start your adventure today!"</h1>
+        </div>
+    
+        <div class="container-wrapper">
+            <div class="container animated">
+                <h2>Why Use a Digital Library?</h2>
+                <p class="about">Digital libraries are accessible from anywhere with an internet connection. This makes them
+                    invaluable for people who may not have access to physical libraries due to location, mobility issues, or
+                    other constraints.</p>
+            </div>
+    
+            <div class="container animated">
+                <h2>Benefits</h2>
+                <p class="about">24/7 Availability<br>Vast Resources<br>Cost-Effectiveness<br>Collaborative Learning<br>Environmentally
+                    Friendly<br>Multimedia Content</p>
+            </div>
+        </div>
+        <body>
+          <header class="page-header">
+              <div class="header-content">
+                  <h1>DIGITAL LIBRARY</h1>
+                  <nav> 
+                      <li><a href="#">Resources</a></li>
+                      <li><a href="#">How Can I Use Digital Library?</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">My Lists</a></li>
+                      <li><a href="#">Education</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScnvJOIhIcaSe0TZiyR5Yki-G9JhDG-C_Z2sEG7edfTfzivkA/viewform?usp=pp_url">Feedback</a></li>
+                      <li><a href="#">Ebooks</a></li>
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">Events</a></li>
+                    </ul>
+                  </nav>
+              </div>
+             
+          </header>
+            </div>
+            
+          <footer class="page-footer">
+              <p>Copyright &copy; DIGITAL LIBRARY</p>
+          </footer>
+          <script src="script.js"></script>
+      </body>
+        </body>
+        </html>
+         
+         
+         
+
+         

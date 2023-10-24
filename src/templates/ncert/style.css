@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(addbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width:85%;
+    margin: auto;
+    padding:55px 0;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+.BookFlip{
+    width: 120px;
+    cursor: pointer;
+}
+.book{
+    position: absolute;
+    top: 14%;
+    left: 6%;
+}
+.flip{
+    position: absolute;
+    top: 13%;
+    left: 11.5%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+    position: relative;
+    
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #00a2ff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;    
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+
+/* .form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top,white,white);
+
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.form input{
+    width: 240px;
+    height: 45px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:2px solid #0073ff;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+
+}
+::placeholder{
+    color: rgb(157, 157, 157);
+    font-family: Arial;
+}
+.btn{
+    width:100px;
+    float: left;
+    height: 50px;
+    margin-right: 9%;
+    margin-left: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight:bold;
+    border: none;
+}
+    
+
+.btn:hover{
+    background: #0073ff;
+} */
+

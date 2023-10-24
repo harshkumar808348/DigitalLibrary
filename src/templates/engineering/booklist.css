@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8em;
+
+   
+
+}
+.card{
+    margin:40px;
+    
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgb(236, 236, 236);
+  transition: all 0.5s ease;
+}
